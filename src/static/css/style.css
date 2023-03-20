@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #302D43;
+    --light-bg: #9b96b9;
+    --violet: #6953F7;
+    --pink: #CD4FF7;
+    --red-expenses:  #EA2015;
+    --red-expenses-not_checked:  #F69C97;
+    --green-incomes: #21DE49;
+    --green-incomes-not_checked: #BFF5CA;
+    --off_white: #FAF9F6;
+}
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--off_white);
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 0.2rem;
+        border: solid 3px var(--light-bg);
+        background-color: var(--bg-color);
+        color: var(--light-bg);
+    }
+
+    button:hover {
+        background-color: var(--light-bg);
+        color: var(--bg-color);
+    }
+
+    #header {
+        width: 100vw;
+        height: 20vh;
+        padding: 1.8rem;
+    }
+
+    #header div {
+        display: flex;
+        place-items: center;
+        justify-content: space-between;
+    }
+
+    #header div h1 {
+        font-weight: 600;
+    }
+
+    .profile_pic-container {
+        display: inline-block;
+        width: 3.2rem;
+        height: 3.2rem;
+        background: url("../img/profile_pic.webp") 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    #user-input {
+        width: 100vw;
+        height: 40vh;
+        padding: 0 1.5rem;
+    }
+
+    .user-input {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    input {
+        width: 100%;
+        height: 50%;
+        padding: 0.8rem;
+        font-size: 5rem;
+        border: none;
+        border-radius: 1rem;
+        background: none;
+        color: white;
+        text-align: center;
+    }
+
+    input::placeholder {
+        color: var(--light-bg);
+        opacity: 0.1;
+        font-weight: lighter;
+    }
+
+    .type {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .type button {
+        width: 100%;
+    }
+
+    #balance {
+        padding: 0 1.8rem;
+    }
+
+    #balance p {
+        font-size: 1.4rem;
+        font-weight: lighter;
+    }
+
+    #balance h3{
+        font-size: 2rem;
+    }
+
+    .in-out {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .in-out .spend,
+    .in-out .profit {
+        display: flex;
+        flex-direction: column;
+    }
+}

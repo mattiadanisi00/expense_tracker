@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Expenses Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/index.js" defer></script>
+</head>
+<body>
+
+<section id="header">
+    <header>
+        <div>
+            <h1>Hello, Mattia</h1>
+            <div class="profile_pic-container"></div>
+        </div>
+    </header>
+</section>
+
+<section id="user-input">
+    <div class="user-input">
+        <input type="number" name="amount" id="amount" placeholder="00,00">
+        <div class="type">
+            <button type="button" id="incomes-btn">Incomes</button>
+            <button type="button" id="expenses-btn">Expenses</button>
+        </div>
+    </div>
+</section>
+
+<section id="balance">
+    <p>My Balance</p>
+    <h3 class="balance-amount"></h3>
+    <div class="in-out">
+        <div class="spend">
+            <p>Spend</p>
+            <h3></h3>
+        </div>
+        <div class="profit">
+            <p>Profit</p>
+            <h3></h3>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <footer>
+
+    </footer>
+</section>
+
+
+</body>
+</html>
